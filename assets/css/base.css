@@ -1,0 +1,89 @@
+* {
+    box-sizing: inherit;
+}
+
+html {
+    font: 14px/18px Arial,Helvetica,sans-serif;
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+.body {
+    min-width: 1024px;
+    color: #333;
+}
+
+.grid {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+/*box-common*/
+.box-common__top {
+    display: block;
+    background-image: url("//cdn.tgdd.vn/mwgcart/mwg-site/ContentMwg/images/lunar_new_year/TagLine/TGDD/tagline_desktop.png?v=2");
+    background-repeat: no-repeat;
+    padding: 10px;
+}
+
+.box-common__top-title {
+    color: #fff;
+    width: 33%;
+    float: left;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 29px;
+}
+
+.box-common__top-link {
+    width: 67%;
+    float: right;
+    font-size: 0;
+    text-align: right;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.box-common__top-link a {
+    border: 1px solid #e0e0e0;
+    border-radius: 16px;
+    color: #333;
+    display: inline-block;
+    font-size: 13px;
+    line-height: 10px;
+    margin-left: 10px;
+    padding: 10px 11px;
+    background: #fff;
+}
+
+.box-common__top-link a:first-child {
+    margin-left: 0;
+}
+
+.box-common__main {
+    width: 1200px;
+    border: none;
+    padding: 0 10px;
+}
